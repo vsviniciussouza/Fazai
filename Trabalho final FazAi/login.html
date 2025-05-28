@@ -1,0 +1,40 @@
+<!-- web-frontend/login.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - FazAí</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="" alt=""><h1>FazAí</h1>
+    <nav>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="tipo">Tipo de Conta:</label>
+      <select id="tipo" name="tipo">
+        <option value="usuario">Usuário</option>
+        <option value="empresa">Empresa</option>
+      </select>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="login-msg"></div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

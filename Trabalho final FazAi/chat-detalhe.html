@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat - FazAí</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .mensagens-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      height: 400px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .mensagem {
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      max-width: 70%;
+      word-wrap: break-word;
+    }
+    .mensagem.remetente {
+      background-color: #007BFF;
+      color: white;
+      align-self: flex-end;
+    }
+    .mensagem.destinatario {
+      background-color: #e5e5ea;
+      color: black;
+      align-self: flex-start;
+    }
+    .input-container {
+      max-width: 800px;
+      margin: 1rem auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .input-container input {
+      flex-grow: 1;
+      padding: 0.75rem;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+    .input-container button {
+      padding: 0 1.5rem;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FazAí</h1>
+    <nav>
+      <a href="chat.html">Voltar às Conversas</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mensagens-container" id="mensagens"></div>
+
+    <div class="input-container">
+      <input type="text" id="inputMensagem" placeholder="Digite sua mensagem..." />
+      <button id="btnEnviar">Enviar</button>
+    </div>
+  </main>
+
+  <script src="chat-detalhe.js"></script>
+</body>
+</html>
